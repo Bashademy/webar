@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D AR Model Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .model-box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .model-box:hover {
+            transform: translateY(-5px);
+        }
+        .model-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .model-box h2 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .model-box a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .model-box a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>3D AR Model Viewer</h1>
+        <div class="model-grid">
+            <div class="model-box">
+                <img src="https://via.placeholder.com/200x200" alt="Model 1">
+                <h2>Model 1</h2>
+                <a href="jp.html">View AR Model</a>
+            </div>
+            <div class="model-box">
+                <img src="https://via.placeholder.com/200x200" alt="Model 2">
+                <h2>Model 2</h2>
+                <a href="custom.html">View AR Model</a>
+            </div>
+            <div class="model-box">
+                <img src="https://via.placeholder.com/200x200" alt="Model 3">
+                <h2>Model 3</h2>
+                <a href="model3.html">View AR Model</a>
+            </div>
+            <div class="model-box">
+                <img src="https://via.placeholder.com/200x200" alt="Model 4">
+                <h2>Model 4</h2>
+                <a href="model4.html">View AR Model</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
